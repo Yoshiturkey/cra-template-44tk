@@ -1,0 +1,48 @@
+{
+    "name": "cra-template-44tk",
+    "version": "1.0.0",
+    "keywords": [
+      "react",
+      "create-react-app",
+      "template",
+      "typescript"
+    ],
+    "description": "The base TypeScript template for Create React App. for 44tk",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Yoshiturkey/cra-template-44tk.git",
+      "directory": "packages/cra-template-typescript"
+    },
+    "license": "MIT",
+    "engines": {
+      "node": ">=10"
+    },
+    "bugs": {
+      "url": "https://github.com/Yoshiturkey/cra-template-44tk/issues"
+    },
+    "files": [
+      "template",
+      "template.json"
+    ],
+    "devDependencies": {
+      "husky": "^5.2.0",
+      "lint-staged": "^10.5.4",
+      "prettier": "^2.2.1"
+    },
+    "lint-staged": {
+      "*.{ts, tsx}": [
+        "prettier --write"
+      ]
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "lint-staged"
+      }
+    },
+    "prettier": {
+      "semi": false,
+      "singleQuote": true,
+      "tabWidth": 2,
+      "trailingComma": "all"
+    }
+  }
