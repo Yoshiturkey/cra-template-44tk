@@ -1,0 +1,69 @@
+@import '_reset';
+
+$primary-color: #fefefe;
+$secondary-color: #202f55;
+$accent-color: #ff8f44;
+
+$base-font-size: 16;
+
+body, #root {
+    width: 100vw;
+    height: 100vh;
+    background:  $primary-color;
+    color: $secondary-color;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    width: 60vw;
+    height: 50vh;
+    margin: 0 auto;
+}
+
+.hero {
+    margin: 0 0 1.2em 0;
+    padding-bottom: 1.8em;
+    border-bottom: 1px solid saturate(#eee, 20%);
+    .title {
+        font-size:  (52 / $base-font-size) + em;
+        color: $secondary-color;
+        line-height: 1.2;
+    }
+    .greeting {
+        line-height: 1.5;
+        font-size: (28 / $base-font-size) + em;
+    }
+}
+
+dl {
+    padding-left: 0.5em;
+    dd {
+        margin: 0 0 1em 1em;
+    }
+}
+
+a {
+    color: #61dafb;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes App-logo-spin {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
