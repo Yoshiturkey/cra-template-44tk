@@ -1,6 +1,6 @@
 # cra-tempalte-44tk
 
-this a little nifty template. for Create React App
+## 🎉 this a React little nifty Simple starter Template. 
 
 ```
 npx create-react-app my-app --template 44tk
@@ -12,3 +12,18 @@ npx create-react-app my-app --template 44tk
 - husky
 - lint-staged
 - prettier
+- typescript
+
+---
+## Directory structure
+
+```
+.
+├── 📁 public ... public
+└── 📁 src 
+    ├── 📁 assets ... // images & css & media
+    │   ├── 📁 images
+    │   └── 📁 styles
+    ├── 📁 components ... // components
+    └── 📁 tests ... // tests files
+```
